@@ -1,0 +1,11 @@
+to install the program, run in folder
+
+        ./configure
+        make
+        sudo make install
+
+You will need apache web server with PHP module installed to run the program, and by default the program is installed at,
+
+http://localhost/xr-forward.html
+
+

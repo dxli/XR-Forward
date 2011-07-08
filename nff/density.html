@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>x-ray properties</title>
+  <style>
+    .inputform
+    {
+        
+        display:block;
+    }
+    
+    .displayframe
+    {
+        text-align:center;
+        border:1px solid gray;
+        width:600px;
+        height:700px;
+        display:none;
+        
+    }
+    
+    .dframe
+    {
+        text-align:center;
+        width:100%;
+        height:100%; 
+        overflow:auto;
+        
+    }
+    
+    .input
+    {
+        border:1px dashed;
+        background-color:#dEe6eF;
+        text-align:left;
+    }
+    
+    .label
+    {
+        width:300px;
+        text-align:right;
+        vertical-align:top;
+    
+    }
+    
+    .input_place
+    {
+        background-color:#ffF6FF;
+        border-top:2px solid gray;
+        border-left:2px solid gray;
+        border-right:2px solid gray;
+        border-bottom:2px solid gray;
+        vertical-align:center;
+    }
+    
+    .thetable
+    {
+        border-collapse:collapse;
+        
+    }
+
+    .text0
+    {
+        text-align:left;
+	vertical-align: center;
+    }
+    
+    body
+    {
+        text-align:center;
+    }
+    
+    </style>
+</head>
+<body>
+<center>
+<form target="xresults" method="post" action="/cgi-bin/xrforward.cgi"
+ name="absorption">
+  <h3 style="text-align: center;">Material</h3>
+Please supply density (in&nbsp;g/cm<sup>3</sup>) after compound
+formulae.<br>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>Examples:</td>
+        <td>for water,<span
+ style="background-color: rgb(222, 230, 239);">H2O
+0.998</span></td>
+      </tr>
+      <tr>
+        <td><br>
+        </td>
+        <td>for water and Gold,<span
+ style="background-color: rgb(222, 230, 239);">H2O
+0.998 Au</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+Components: <input class="input" size="32" maxlength="80"
+ value="H2O 1 Au" name="formulae" type="text"><br>
+  <hr>
+  <h3>Density profile</h3>
+Density profiles for all components<br>
+&#961; <sub>z</sub> normalized to each component's own bulk &#961; <sub>Bulk</sub>
+  <br>
+<table border="1"><tbody><tr>
+<td border="0">Format:</td><td>z( &Aring; )</td><td> &#961;<sub>z</sub>/ &#961; <sub>Bulk</sub></td><td> &#8230;</td></tr></tbody></table>
+  <textarea class="input" rows="12" cols="32" name="rho">-33 0. 0
+-32.5 0. 0.0128154
+-32 0. 0.025503
+-31.5 0. 0.0380611
+-31 0. 0.0504884
+-30.5 0. 0.062783
+-30 0. 0.0749437
+-29.5 0. 0.0869686
+-29 0. 0.0988563
+-28.5 0. 0.110605
+-28 0. 0.122214
+-27.5 0. 0.133681
+-27 0. 0.145004
+-26.5 0. 0.156182
+-26 0. 0.167213
+-25.5 0. 0.178097
+-25 0. 0.18883
+-24.5 0. 0.199413
+-24 0. 0.209842
+-23.5 0. 0.220117
+-23 0. 0.230236
+-22.5 0. 0.240198
+-22 0. 0.25
+-21.5 0. 0.259642
+-21 0. 0.269121
+-20.5 0. 0.278436
+-20 0. 0.287587
+-19.5 0. 0.29657
+-19 0. 0.305384
+-18.5 0. 0.314029
+-18 0. 0.322502
+-17.5 0. 0.330802
+-17 0. 0.338926
+-16.5 0. 0.346875
+-16 0. 0.354646
+-15.5 0. 0.362237
+-15 0. 0.369647
+-14.5 0. 0.376874
+-14 0. 0.383918
+-13.5 0. 0.390775
+-13 0. 0.397446
+-12.5 0. 0.403927
+-12 0. 0.410218
+-11.5 0. 0.416317
+-11 0. 0.422222
+-10.5 0. 0.427932
+-10 0. 0.433446
+-9.5 0. 0.438761
+-9 0. 0.443877
+-8.5 0. 0.448791
+-8 0. 0.453502
+-7.5 0. 0.458009
+-7 0. 0.462309
+-6.5 0. 0.466402
+-6 0. 0.470285
+-5.5 0. 0.473958
+-5 0. 0.477419
+-4.5 0. 0.480665
+-4 0. 0.483696
+-3.5 0. 0.486511
+-3 0. 0.489106
+-2.5 0. 0.491481
+-2 0. 0.493635
+-1.5 0. 0.495565
+-1 0. 0.49727
+-0.5 0. 0.498749
+0 0. 0.5
+0.5 0. 0.501021
+1 0. 0.501812
+1.5 0. 0.502369
+2 0. 0.502692
+2.5 0. 0.50278
+3 0. 0.50263
+3.5 0. 0.502241
+4 0. 0.501611
+4.5 0. 0.50074
+5 0. 0.499624
+5.5 0. 0.498264
+6 0. 0.496657
+6.5 0. 0.494801
+7 0. 0.492696
+7.5 0. 0.490339
+8 0. 0.487729
+8.5 0. 0.484864
+9 0. 0.481743
+9.5 0. 0.478364
+10 0. 0.474727
+10.5 0. 0.470828
+11 0. 0.466667
+11.5 0. 0.462241
+12 0. 0.457551
+12.5 0. 0.452593
+13 0. 0.447366
+13.5 0. 0.441869
+14 0. 0.436101
+14.5 0. 0.430059
+15 0. 0.423742
+15.5 0. 0.417148
+16 0. 0.410276
+16.5 0. 0.403125
+17 0. 0.395692
+17.5 0. 0.387977
+18 0. 0.379977
+18.5 0. 0.371692
+19 0. 0.363119
+19.5 0. 0.354257
+20 0. 0.345104
+20.5 0. 0.335659
+21 0. 0.32592
+21.5 0. 0.315886
+22 0. 0.305556
+22.5 0. 0.294926
+23 0. 0.283997
+23.5 0. 0.272766
+24 0. 0.261232
+24.5 0. 0.249393
+25 0. 0.237249
+25.5 0. 0.224796
+26 0. 0.212034
+26.5 0. 0.19896
+27 0. 0.185575
+27.5 0. 0.171875
+28 0. 0.15786
+28.5 0. 0.143527
+29 0. 0.128876
+29.5 0. 0.113904
+30 0. 0.0986101
+30.5 0. 0.0829929
+31 0. 0.0670507
+31.5 0. 0.0507818
+32 0. 0.0341848
+32.5 0. 0.0172581
+33 1. 0.
+</textarea><br>
+Gaussian Roughness<input class="input" name="sigma" value="2" size="8"
+ maxlength="8" type="text"> &Aring; <br>
+  <hr>
+  <h3>X-ray</h3>
+  <table style="text-align: center;" border="1" cellpadding="2"
+ cellspacing="2">
+    <tbody>
+      <tr>
+        <td>Photon E=<input class="input" name="xenergy" value="10"
+ size="6" maxlength="8" type="text"> KeV </td>
+        <td> &#955; = <input class="input" name="xlambda" value="" size="6"
+ maxlength="8" type="text"> &Aring; </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Output</h3>
+  <table style="text-align: center;" border="1" cellpadding="2"
+ cellspacing="2">
+    <tbody>
+      <tr>
+        <td> q<sub>min</sub> = <input class="input" name="qmin"
+ value="0.01" size="4" maxlength="6" type="text"> </td>
+        <td> q<sub>max</sub> = <input class="input" name="qmax"
+ value="1" size="4" maxlength="6" type="text"> </td>
+        <td> dq = <input class="input" name="dq" value="0.005" size="4"
+ maxlength="6" type="text"> &Aring;<sup>-1</sup>; </td>
+      </tr>
+    </tbody>
+   </table><br>
+  <input type="checkbox" name="fresnel" checked="yes">Normalize by Fresnel Reflectivity<br>
+  <input type="checkbox" name="outputdata" >Display reflectivity in data format<br>
+  <input type="checkbox" name="born">Use <a href="http://en.wikipedia.org/wiki/Born_approximation">Born Approximation</a> instead of Parrett scheme<br>
+  <button>Submit</button>
+</form>
+</center>
+</body>
+</html>
