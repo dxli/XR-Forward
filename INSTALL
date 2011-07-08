@@ -4,6 +4,8 @@ to install the program, run in folder
         make
         sudo make install
 
+You can regenerate the configure file by running ./autogen.sh
+
 You will need apache web server with PHP module installed to run the program, and by default the program is installed at,
 
 http://localhost/xr-forward.html
