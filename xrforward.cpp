@@ -167,7 +167,7 @@ int main()
    vector<compound> vcpmd0;
     for (vector<string>::iterator pvs=vs.begin(); pvs != vs.end();pvs++) {
         //std::cout<<*pvs<<endl;
-        compound::compound cpmd0(*pvs,lambda,1.0);
+        compound cpmd0(*pvs,lambda,1.0);
         if (!cpmd0.els.size()) continue;
         if (!( pvs + 1 ==vs.end() )) {
             double rho0=1e-24; // in g angstrom^-3
@@ -194,7 +194,7 @@ int main()
     //std::cout<<"size="<<rhoprofile.size();
 
     
-multilayer::multilayer ml0(lambda);
+multilayer ml0(lambda);
 ml0.tozprofile(nbulki,rhoprofile,vcpmd0);
 if(sigma>=0.05) ml0.convolution(sigma);//gaussian roughness
 ml0.by_rF=by_rF;
