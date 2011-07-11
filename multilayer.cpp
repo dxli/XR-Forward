@@ -337,7 +337,7 @@ return;
     GracePrintf("world ymax %g",ymax*1.25);
     GracePrintf("autoticks");
     if(born) GracePrintf("subtitle \"Born Approximation\"");
-    else GracePrintf("subtitle \"Parrett\"");
+    else GracePrintf("subtitle \"Parratt\"");
   GracePrintf("xaxis label \"\\+\\+q (%c\\S-1\\N\\+\\+)\"",(unsigned char) 197);
     if(by_rF) GracePrintf("yaxis label \"\\+\\+R(q\\sz\\N\\+\\+)/R\\sF\\N\"");
     else GracePrintf("yaxis label \"\\+\\+R(q\\sz\\N\\+\\+)\"");
