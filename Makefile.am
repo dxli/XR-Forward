@@ -9,4 +9,3 @@ xrfoward_cgi_SOURCES = xrfoward.cpp
 xabs_cgi_SOURCES = xabs.cpp
 #xabs_cgi_LDADD = multilayer.o elements.o 
 LDADD = multilayer.o elements.o 
-INCLUDES = -I/usr/include/mysql++ -I/usr/include/mysql

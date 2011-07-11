@@ -35,7 +35,7 @@ AC_FUNC_STRTOD
 AC_HAVE_LIBRARY([gslcblas],[],[echo "couldn't link -lgsl"])
 AC_HAVE_LIBRARY([gsl],[],[echo "couldn't link -lgsl"])
 AC_HAVE_LIBRARY([grace_np],[],[echo "couldn't link -lgsl"])
-AC_HAVE_LIBRARY([mysqlpp],[],[echo "couldn't link -lmysqlpp"])
+#AC_HAVE_LIBRARY([mysqlpp],[],[echo "couldn't link -lmysqlpp"])
 AC_CHECK_FUNCS([gettimeofday])
 
 AC_CONFIG_FILES([Makefile])
