@@ -164,7 +164,7 @@ int main()
     //std::cout<<vs.size()<<" ";
     //std::cout<<"<table border=\"2\"><tbody>\n";
    // std::cout<<"<tr><td>X-ray energy = "<<en<<" KeV</td><td> &lambda; = "<<lambda<<" &Aring; </td></tr>\n";
-   vector<compound::compound> vcpmd0;
+   vector<compound> vcpmd0;
     for (vector<string>::iterator pvs=vs.begin(); pvs != vs.end();pvs++) {
         //std::cout<<*pvs<<endl;
         compound::compound cpmd0(*pvs,lambda,1.0);

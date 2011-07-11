@@ -113,7 +113,7 @@ int main()
     std::cout<<"<tr><td>X-ray energy = "<<en<<" KeV</td><td> &lambda; = "<<lambda<<" &Aring; </td></tr>\n";
     for (vector<string>::iterator pvs=vs.begin(); pvs != vs.end();pvs++) {
         //std::cout<<*pvs<<endl;
-        compound::compound cpmd0(*pvs,lambda,1.0);
+        compound cpmd0(*pvs,lambda,1.0);
         if (!cpmd0.els.size()) continue;
         if (!( pvs + 1 ==vs.end() )) {
             double rho0=1e-24; // in g angstrom^-3
