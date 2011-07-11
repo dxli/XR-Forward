@@ -1,1 +1,1 @@
-This program calculate X-ray reflectivity from density profile using PHP web interface
+This program calculate X-ray reflectivity from density profile using the Parratt algorithm (Born approximation is also included for comparison).
